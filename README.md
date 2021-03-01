@@ -1,6 +1,6 @@
 # AutoDependencyInjection
-[![NuGet](https://img.shields.io/nuget/dt/mediatr.svg)](https://www.nuget.org/packages/AutoDependencyInjection) 
-[![NuGet](https://img.shields.io/nuget/vpre/mediatr.svg)](https://www.nuget.org/packages/AutoDependencyInjection)
+[![NuGet](https://img.shields.io/nuget/dt/AutoDependencyInjection.svg)](https://www.nuget.org/packages/AutoDependencyInjection) 
+[![NuGet](https://img.shields.io/nuget/vpre/AutoDependencyInjection.svg)](https://www.nuget.org/packages/AutoDependencyInjection)
 
 Auto generate dependency injection in .NET applications
 
