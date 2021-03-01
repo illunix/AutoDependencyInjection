@@ -4,8 +4,10 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>preview</LangVersion>
     <Authors>illunix</Authors>
-    <Description>Auto generate dependency injection</Description>
+    <Description>Auto generate dependency injection in .NET applications</Description>
     <RepositoryUrl>https://github.com/illunix/AutoDependencyInjection</RepositoryUrl>
+    <Version>1.0.1</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

@@ -4,10 +4,6 @@
     {
     }
 
-    public class Bar
-    {
-    }
-
     public partial class Program
     {
         public readonly Foo _foo;
