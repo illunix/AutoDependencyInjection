@@ -78,10 +78,34 @@ namespace AutoDependencyInjection
                 elo.Append($@"this.{field.Name} = {field.ParameterName};");
             }
 
+            var symbolTypeArgs = new StringBuilder();
+
+            if (symbol.TypeArguments.Any())
+            {
+                foreach (var arg in symbol.TypeArguments)
+                {
+                    if (symbol.TypeArguments.Count() == 1)
+                    {
+                        symbolTypeArgs.Append($"<{arg.Name}>");
+                    }
+                    else
+                    {
+                        if (arg == symbol.TypeArguments.Last())
+                        {
+                            symbolTypeArgs.Append($"{arg.Name}>");
+                        }
+                        else
+                        {
+                            symbolTypeArgs.Append($"<{arg.Name}, ");
+                        }
+                    }
+                }
+            }
+
             var source = new StringBuilder($@"
 namespace {namespaceName}
 {{
-    public partial class {symbol.Name}
+    public partial class {symbol.Name}{symbolTypeArgs}
     {{
         public {symbol.Name}({string.Join(", ", arguments)})
         {{
